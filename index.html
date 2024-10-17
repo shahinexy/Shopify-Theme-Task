@@ -1,19 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopify Theme Task</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        main {
+            font-family: "Poppins", sans-serif;
+        }
+        .box_text{
+            -webkit-text-stroke: 1px currentColor;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+
 </head>
+
 <body>
     <header></header>
 
-    <main>
-        <h1 class="text-red-600">This is Theme task</h1>
+    <main class="max-w-[1680px] mx-auto">
+        <section>
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-24">
+                <div class="space-y-4">
+                    <h1 class="text-[64px] text-[#192434] font-bold"><span class="box_text">WEEKEND</span> DEALS</h1>
+                    <p class="text-xl">Our top selection showcases the freshest additions to our collection,
+                        bringing you cutting-edge products and exciting innovations.</p>
+                </div>
+
+                <div>
+                    <div role="tablist" class="tabs tabs-bordered">
+                        <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Tab 1" />
+                        <div role="tabpanel" class="tab-content p-10">Tab content 1</div>
+
+                        <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Tab 2"
+                            checked="checked" />
+                        <div role="tabpanel" class="tab-content p-10">Tab content 2</div>
+
+                        <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Tab 3" />
+                        <div role="tabpanel" class="tab-content p-10">Tab content 3</div>
+                    </div>
+                </div>
+        </section>
     </main>
 
-    <footer>       
+    <footer>
     </footer>
 </body>
+
 </html>
