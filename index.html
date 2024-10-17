@@ -24,6 +24,15 @@
             -webkit-text-stroke: 1px currentColor;
             -webkit-text-fill-color: transparent;
         }
+
+        .tabs-boxed :is(.tab-active,[aria-selected=true]):not(.tab-disabled):not([disabled]), .tabs-boxed :is(input:checked) {
+    background-color: #42526e;
+}
+
+.tabs-boxed .tab {
+    border-radius: 15px;
+    overflow: hidden;
+}
     </style>
 
 </head>
@@ -41,12 +50,12 @@
                 </div>
 
                 <div class="md:ml-auto">
-                    <div role="tablist" class="tabs tabs-bordered">
-                        <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Man" />
+                    <div role="tablist" class="tabs tabs-boxed  gap-16 bg-transparent">
+                        <input type="radio" name="my_tabs_1" role="tab" class="tab rounded-2xl" aria-label="Man" checked="checked"/>
                         
 
                         <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Woman"
-                            checked="checked" />
+                             />
                         
 
                         <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Kids" />
