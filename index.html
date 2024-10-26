@@ -25,13 +25,10 @@
 
     <main class="max-w-[1680px] mx-auto px-3">
         <section>
-            <div class="">
-
 
                 <!-- tab  -->
                 <div class="wrapper">
                     <div class="tabs">
-
                     <div class="grid md:grid-cols-2 grid-cols-1 gap-24">
                         <div class="space-y-4">
                             <h1 class="text-[64px] text-[#192434] font-bold"><span class="box_text">WEEKEND</span> DEALS</h1>
@@ -39,46 +36,60 @@
                                 bringing you cutting-edge products and exciting innovations.</p>
                         </div>
 
-                      <div role="tablist" aria-label="Programming Languages">
-                        <button role="tab" aria-selected="true" id="js">
+                      <div class="flex gap-10 items-center justify-end" role="tablist" aria-label="Programming Languages">
+                        <button class="px-5 py-3 rounded-xl text-xl border-2 border-[#192434]" role="tab" aria-selected="true" id="js">
                           JavaScript
                         </button>
-                        <button role="tab" aria-selected="false" id="ruby">Ruby
+                        <button class="px-5 py-3 rounded-xl text-xl border-2 border-[#192434]" role="tab" aria-selected="false" id="ruby">Ruby
                         </button>
-                        <button role="tab" aria-selected="false" id="php">
+                        <button class="px-5 py-3 rounded-xl text-xl border-2 border-[#192434]" role="tab" aria-selected="false" id="php">
                           PHP
                         </button>
                       </div>
                     </div>
 
-                      <div role="tabpanel" aria-labelledby="js">
-                        <p>JavaScript is great!</p>
-                      </div>
-                      <div role="tabpanel" aria-labelledby="ruby" hidden>
-                        <p>Ruby is great</p>
-                      </div>
-                      <div role="tabpanel" aria-labelledby="php" hidden>
-                        <p>PHP is great!</p>
-                      </div>
+                    <!-- tab result  -->
+                    <div class="w-full grid md:grid-cols-12 grid-cols-1 gap-5 my-12">
+                        <div class="col-span-3">
+                            <div class="bg-slate-500 rounded-2xl h-72">
+    
+                            </div>
+                        </div>
+                        <div class="col-span-9">
+                                    <!-- tab 1 data  -->
+                                <div role="tabpanel" aria-labelledby="js">
+                                    <div class="grid grid-cols-3 gap-5">
+                                        <div class="bg-slate-800 rounded-2xl h-72 text-white">JS</div>
+                                        <div class="bg-slate-800 rounded-2xl h-72 text-white">JS2</div>
+                                        <div class="bg-slate-800 rounded-2xl h-72 text-white">JS3</div>
+                                    </div>
+                                  </div>
+                                  <!-- tab 2 data  -->
+                                  <div role="tabpanel" aria-labelledby="ruby" hidden>
+                                    <div class="grid grid-cols-3 gap-5">
+                                        <div class="bg-slate-800 rounded-2xl h-72 text-white">ruby</div>
+                                        <div class="bg-slate-800 rounded-2xl h-72 text-white">ruby2</div>
+                                        <div class="bg-slate-800 rounded-2xl h-72 text-white">ruby3</div>
+                                    </div>
+                                  </div>
+                                  <!-- tab 3 data  -->
+                                  <div role="tabpanel" aria-labelledby="php" hidden>
+                                    <div class="grid grid-cols-3 gap-5">
+                                        <div class="bg-slate-800 rounded-2xl h-72 text-white">php</div>
+                                        <div class="bg-slate-800 rounded-2xl h-72 text-white">php2</div>
+                                        <div class="bg-slate-800 rounded-2xl h-72 text-white">php3</div>
+                                    </div>
+                                  </div>
+
+                                
+                        </div>
+                    </div>
+
+                     
                     </div>
                   </div>
 
-                </div>
-
-                <div class="w-full grid md:grid-cols-12 grid-cols-1 gap-5 my-12">
-                    <div class="col-span-3">
-                        <div class="bg-slate-500 rounded-2xl h-72">
-
-                        </div>
-                    </div>
-                    <div class="col-span-9">
-                        <div class="grid grid-cols-3 gap-5">
-                            <div class="bg-slate-800 rounded-2xl h-72"></div>
-                            <div class="bg-slate-800 rounded-2xl h-72"></div>
-                            <div class="bg-slate-800 rounded-2xl h-72"></div>
-                        </div>
-                    </div>
-                </div>
+                  <!-- end tab  -->
         </section>
     </main>
 
