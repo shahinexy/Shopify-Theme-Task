@@ -33,3 +33,35 @@ tabButtons.forEach(button => {
 })
 
 
+// slider 
+var currentIndex = 0;
+var currentTranslation = 0;
+
+var slides = document.querySelectorAll('.slide');
+var slider = document.querySelector('.slider');
+
+function showSlide() {
+  slides.forEach( (slide, index) => {
+    if (currentIndex === index) {
+      slide.classList.add('active')
+    } else {
+      slide.classList.remove('active')
+    }
+  });
+}
+
+var offset = 210;
+
+function prevSlide() {
+    currentIndex = currentIndex > 0 ? currentIndex - 1 : 0;
+    currentTranslation = currentIndex * offset * -1 + 100;
+    slider.style.transform = 'translateX(' + currentTranslation + 'px)';
+    showSlide();
+}
+
+function nextSlide() {
+    currentIndex = currentIndex < slides.length - 1 ? currentIndex + 1 : slides.length - 1;
+    currentTranslation =  currentIndex  * offset * -1 + 100;
+    slider.style.transform = 'translateX(' + currentTranslation + 'px)';
+    showSlide();
+}

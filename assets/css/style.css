@@ -32,3 +32,39 @@ button:focus {
   outline: 0;
   --bs-color: rgba(0,0,0,0.6);
 }
+
+
+/* slider  */
+.slider {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  transition: transform ease 0.2s;
+}
+
+.slide {
+  transition: transform ease 0.2s, opacity ease 0.2s;
+  opacity: 0.5;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.prev-button {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  z-index: 1;
+}
+
+.next-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  z-index: 1;
+}
