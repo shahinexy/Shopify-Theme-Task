@@ -18,6 +18,10 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
 </head>
 
 <body>
@@ -36,14 +40,14 @@
                                 bringing you cutting-edge products and exciting innovations.</p>
                         </div>
 
-                      <div class="flex gap-10 items-center justify-end" role="tablist" aria-label="Programming Languages">
+                      <div class="flex gap-10 items-end justify-end" role="tablist" aria-label="Programming Languages">
                         <button class="px-5 py-3 rounded-xl text-xl border-2 border-[#192434]" role="tab" aria-selected="true" id="js">
-                          JavaScript
+                          Man
                         </button>
-                        <button class="px-5 py-3 rounded-xl text-xl border-2 border-[#192434]" role="tab" aria-selected="false" id="ruby">Ruby
+                        <button class="px-5 py-3 rounded-xl text-xl border-2 border-[#192434]" role="tab" aria-selected="false" id="ruby">Women
                         </button>
                         <button class="px-5 py-3 rounded-xl text-xl border-2 border-[#192434]" role="tab" aria-selected="false" id="php">
-                          PHP
+                          Kids
                         </button>
                       </div>
                     </div>
@@ -58,11 +62,22 @@
                         <div class="col-span-9">
                                     <!-- tab 1 data  -->
                                 <div role="tabpanel" aria-labelledby="js">
-                                    <div class="grid grid-cols-3 gap-5">
-                                        <div class="bg-slate-800 rounded-2xl h-72 text-white">JS</div>
+                                        <!-- <div class="bg-slate-800 rounded-2xl h-72 text-white">JS</div>
                                         <div class="bg-slate-800 rounded-2xl h-72 text-white">JS2</div>
-                                        <div class="bg-slate-800 rounded-2xl h-72 text-white">JS3</div>
-                                    </div>
+                                        <div class="bg-slate-800 rounded-2xl h-72 text-white">JS3</div> -->
+
+                                        <div class="swiper mySwiper grid grid-cols-3 gap-5">
+                                          <div class="swiper-wrapper">
+                                            <div class="swiper-slide">Slide 1</div>
+                                            <div class="swiper-slide">Slide 2</div>
+                                            <div class="swiper-slide">Slide 3</div>
+                                            <div class="swiper-slide">Slide 4</div>
+                                            <div class="swiper-slide">Slide 5</div>
+                                          </div>
+                                          <div class="swiper-pagination"></div>
+                                        </div>
+
+
                                   </div>
                                   <!-- tab 2 data  -->
                                   <div role="tabpanel" aria-labelledby="ruby" hidden>
@@ -96,7 +111,11 @@
     <footer>
     </footer>
 
+    
+
     <script src="assets/Js/script.js"></script>
-</body>
+    <!-- swiper  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
 
 </html>
