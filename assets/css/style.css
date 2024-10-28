@@ -44,7 +44,6 @@ button:focus {
 
 .slide {
   transition: transform ease 0.2s, opacity ease 0.2s;
-  opacity: 0.5;
 }
 
 .slide.active {
