@@ -2,138 +2,162 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopify Theme Task</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopify Theme Task</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
 
-    <link rel="stylesheet" href="assets/css/style.css">
-
-
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body class="bg-[#f4f4f4]">
-    <header></header>
+  <header></header>
 
-    <main class="max-w-[1680px] mx-auto px-3">
-        <section>
+  <main class="max-w-[1680px] mx-auto px-3">
+    <section>
+      <!-- tab  -->
+      <div class="wrapper">
+        <div class="tabs">
+          <div class="grid md:grid-cols-2 grid-cols-1 gap-24">
+            <div class="space-y-4">
+              <h1 class="text-[64px] text-[#192434] font-bold">
+                <span class="box_text">WEEKEND</span> DEALS
+              </h1>
+              <p class="text-xl">
+                Our top selection showcases the freshest additions to our
+                collection, bringing you cutting-edge products and exciting
+                innovations.
+              </p>
+            </div>
 
-                <!-- tab  -->
-                <div class="wrapper">
-                    <div class="tabs">
-                    <div class="grid md:grid-cols-2 grid-cols-1 gap-24">
-                        <div class="space-y-4">
-                            <h1 class="text-[64px] text-[#192434] font-bold"><span class="box_text">WEEKEND</span> DEALS</h1>
-                            <p class="text-xl">Our top selection showcases the freshest additions to our collection,
-                                bringing you cutting-edge products and exciting innovations.</p>
-                        </div>
+            <div class="flex gap-10 items-end justify-end" role="tablist" aria-label="Programming Languages">
+              <button class="px-5 py-3 rounded-xl text-xl border-2 border-[#192434]" role="tab" aria-selected="true"
+                id="js">
+                Man
+              </button>
+              <button class="px-5 py-3 rounded-xl text-xl border-2 border-[#192434]" role="tab" aria-selected="false"
+                id="ruby">
+                Women
+              </button>
+              <button class="px-5 py-3 rounded-xl text-xl border-2 border-[#192434]" role="tab" aria-selected="false"
+                id="php">
+                Kids
+              </button>
+            </div>
+          </div>
 
-                      <div class="flex gap-10 items-end justify-end" role="tablist" aria-label="Programming Languages">
-                        <button class="px-5 py-3 rounded-xl text-xl border-2 border-[#192434]" role="tab" aria-selected="true" id="js">
-                          Man
-                        </button>
-                        <button class="px-5 py-3 rounded-xl text-xl border-2 border-[#192434]" role="tab" aria-selected="false" id="ruby">Women
-                        </button>
-                        <button class="px-5 py-3 rounded-xl text-xl border-2 border-[#192434]" role="tab" aria-selected="false" id="php">
-                          Kids
-                        </button>
-                      </div>
-                    </div>
-
-                    <!-- tab result  -->
-                    <div class="w-full grid md:grid-cols-12 grid-cols-1 gap-5 my-12">
-                        <div class="col-span-3">
-                            <div class="rounded-2xl overflow-hidden ">
-                              <img src="assets/images/stylish-young-man-buttoning-cuff-links-sleeves-style (1) 1.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-span-9">
-                                    <!-- tab 1 data  -->
-                                <div role="tabpanel" aria-labelledby="js">
-                                  <!-- <div class="grid grid-cols-3 gap-5">
+          <!-- tab result  -->
+          <div class="w-full grid md:grid-cols-12 grid-cols-1 gap-5 my-12">
+            <div class="col-span-3">
+              <div class="rounded-2xl overflow-hidden">
+                <img src="assets/images/stylish-young-man-buttoning-cuff-links-sleeves-style (1) 1.png" alt="" />
+              </div>
+            </div>
+            <div class="col-span-9">
+              <!-- tab 1 data  -->
+              <div role="tabpanel" aria-labelledby="js">
+                <!-- <div class="grid grid-cols-3 gap-5">
                                     <div class="bg-slate-800 rounded-2xl h-72 text-white">ruby</div>
                                     <div class="bg-slate-800 rounded-2xl h-72 text-white">ruby2</div>
                                     <div class="bg-slate-800 rounded-2xl h-72 text-white">ruby3</div>
                                 </div> -->
-                                <div class="slider-wrapper overflow-hidden">
-  
-                                  <div class="slider">
-                                    <div class="slide"> 
-                                      <div class="rounded-2xl w-[400px] bg-white overflow-hidden">
-                                        <div class="bg-[#dfddd9] ">
-                                          <img class="w-full h-[450px]" src="assets/images/handsome-man-athlete-po-0G5qodJhM-transformed 1.png" alt="">
-                                        </div>
-                                        <div class="p-3">
-                                          <h3 class="text-xl">White comfort Hoodie</h3>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="slide active"> 
-                                      <div class="bg-slate-800 rounded-2xl h-72 w-[400px] text-white">ruby</div>
-                                    </div>
-                                    <div class="slide"> 
-                                      <div class="bg-slate-800 rounded-2xl h-72 w-[400px] text-white">ruby</div>
-                                    </div>
-                                    <div class="slide"> 
-                                      <div class="bg-slate-800 rounded-2xl h-72 w-[400px] text-white">ruby</div>
-                                    </div>
-                                    <div class="slide active"> 
-                                      <div class="bg-slate-800 rounded-2xl h-72 w-[400px] text-white">ruby</div>
-                                    </div>
-                                    <div class="slide"> 
-                                      <div class="bg-slate-800 rounded-2xl h-72 w-[400px] text-white">ruby</div>
-                                    </div>
-                                  </div>
-                                  <button class="prev-button" onclick="prevSlide()">PREV</button>
-                                  <button class="next-button" onclick="nextSlide()">NEXT</button>
-                                </div>
-                                
-                                
-                                  </div>
-                                  <!-- tab 2 data  -->
-                                  <div role="tabpanel" aria-labelledby="ruby" hidden>
-                                    <div class="grid grid-cols-3 gap-5">
-                                        <div class="bg-slate-800 rounded-2xl h-72 text-white">ruby</div>
-                                        <div class="bg-slate-800 rounded-2xl h-72 text-white">ruby2</div>
-                                        <div class="bg-slate-800 rounded-2xl h-72 text-white">ruby3</div>
-                                    </div>
-                                  </div>
-                                  <!-- tab 3 data  -->
-                                  <div role="tabpanel" aria-labelledby="php" hidden>
-                                    <div class="grid grid-cols-3 gap-5">
-                                        <div class="bg-slate-800 rounded-2xl h-72 text-white">php</div>
-                                        <div class="bg-slate-800 rounded-2xl h-72 text-white">php2</div>
-                                        <div class="bg-slate-800 rounded-2xl h-72 text-white">php3</div>
-                                    </div>
-                                  </div>
-
-                                
+                <div class="slider-wrapper overflow-hidden">
+                  <div class="slider">
+                    <div class="slide">
+                      <div class="rounded-2xl w-[400px] bg-white overflow-hidden">
+                        <div class="bg-[#dfddd9]">
+                          <img class="w-full h-[460px]"
+                            src="assets/images/handsome-man-athlete-po-0G5qodJhM-transformed 1.png" alt="" />
                         </div>
+                        <div class="p-3">
+                          <h3 class="text-xl">White comfort Hoodie</h3>
+                          <p><span class="font-semibold">$60.00</span> <span class="line-through text-sm">72.00</span></p>
+                        </div>
+                      </div>
                     </div>
-
-                     
+                    <div class="slide active">
+                      <div class="bg-slate-800 rounded-2xl h-72 w-[400px] text-white">
+                        ruby
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="bg-slate-800 rounded-2xl h-72 w-[400px] text-white">
+                        ruby
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="bg-slate-800 rounded-2xl h-72 w-[400px] text-white">
+                        ruby
+                      </div>
+                    </div>
+                    <div class="slide active">
+                      <div class="bg-slate-800 rounded-2xl h-72 w-[400px] text-white">
+                        ruby
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="bg-slate-800 rounded-2xl h-72 w-[400px] text-white">
+                        ruby
+                      </div>
                     </div>
                   </div>
+                  <button class="prev-button bg-red-600" onclick="prevSlide()">
+                    PREV
+                  </button>
+                  <button class="next-button bg-red-600" onclick="nextSlide()">
+                    NEXT
+                  </button>
+                </div>
+              </div>
+              <!-- tab 2 data  -->
+              <div role="tabpanel" aria-labelledby="ruby" hidden>
+                <div class="grid grid-cols-3 gap-5">
+                  <div class="bg-slate-800 rounded-2xl h-72 text-white">
+                    ruby
+                  </div>
+                  <div class="bg-slate-800 rounded-2xl h-72 text-white">
+                    ruby2
+                  </div>
+                  <div class="bg-slate-800 rounded-2xl h-72 text-white">
+                    ruby3
+                  </div>
+                </div>
+              </div>
+              <!-- tab 3 data  -->
+              <div role="tabpanel" aria-labelledby="php" hidden>
+                <div class="grid grid-cols-3 gap-5">
+                  <div class="bg-slate-800 rounded-2xl h-72 text-white">
+                    php
+                  </div>
+                  <div class="bg-slate-800 rounded-2xl h-72 text-white">
+                    php2
+                  </div>
+                  <div class="bg-slate-800 rounded-2xl h-72 text-white">
+                    php3
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                  <!-- end tab  -->
-        </section>
-    </main>
+      <!-- end tab  -->
+    </section>
+  </main>
 
-    <footer>
-    </footer>
+  <footer></footer>
 
-    
-
-    <script src="assets/Js/script.js"></script>
-  </body>
+  <script src="assets/Js/script.js"></script>
+</body>
 
 </html>
